@@ -30,7 +30,7 @@ public class Exam1Activity extends AppCompatActivity {
                 String id = editText.getText().toString();
                 int id1 = Integer.parseInt(id);
                 id1++;
-                editText.setText(id1);
+                editText.setText(String.valueOf(id1));
             }
         };
 
@@ -43,7 +43,7 @@ public class Exam1Activity extends AppCompatActivity {
                 String id = editText.getText().toString();
                 int id1 = Integer.parseInt(id);
                 id1--;
-                editText.setText(id1);
+                editText.setText(String.valueOf(id1));
             }
         };
 
