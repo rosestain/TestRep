@@ -10,13 +10,13 @@ import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-    static class ViewHolder extends RecyclerView.ViewHolder;
+    static class ViewHolder extends RecyclerView.ViewHolder
     {
         TextView textView;
         public ViewHolder(View view)
         {
             super(view);
-            textView = view.findviewById(R.id.textView);
+            textView = view.findViewById(R.id.textView);
         }
     }
 

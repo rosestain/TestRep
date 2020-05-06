@@ -48,7 +48,11 @@ public class Exam3Activity extends AppCompatActivity {
         {
             Intent intent = new Intent(this, Exam3EditActivity.class);
             startActivityForResult(intent, 0);
+            String s = intent.getStringExtra("MEMO");
+            arrayList.add(s);
+            recyclerViewAdapter.notifyDataSetChanged();
             return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 }
