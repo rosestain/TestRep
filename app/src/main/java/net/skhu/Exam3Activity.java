@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import java.util.ArrayList;
@@ -38,5 +39,16 @@ public class Exam3Activity extends AppCompatActivity {
     {
         getMenuInflater().inflate(R.menu.menu_recycler_view, menu);
         return true;
+    }
+
+    @Override public boolean onOptionsItemSelected(MenuItem item)
+    {
+        int id = item.getItemId();
+        if(id == R.id.action_create)
+        {
+            Intent intent = new Intent(this, Exam3EditActivity.class);
+            startActivityForResult(intent, 0);
+            return true;
+        }
     }
 }

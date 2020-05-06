@@ -14,7 +14,7 @@ public class Exam1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam1);
 
-        final EditText editText = findViewById(R.id.editText);
+        final EditText editText = findViewById(R.id.editText5);
         String id = "0";
         editText.setText(id);
 
@@ -26,7 +26,7 @@ public class Exam1Activity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                EditText editText = (EditText)findViewById(R.id.editText);
+                EditText editText = (EditText)findViewById(R.id.editText5);
                 String id = editText.getText().toString();
                 int id1 = Integer.parseInt(id);
                 id1++;
@@ -39,7 +39,7 @@ public class Exam1Activity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                EditText editText = (EditText)findViewById(R.id.editText);
+                EditText editText = (EditText)findViewById(R.id.editText5);
                 String id = editText.getText().toString();
                 int id1 = Integer.parseInt(id);
                 id1--;
