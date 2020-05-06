@@ -13,11 +13,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     static class ViewHolder extends RecyclerView.ViewHolder;
     {
         TextView textView;
-
         public ViewHolder(View view)
         {
             super(view);
-
+            textView = view.findviewById(R.id.textView);
         }
     }
 
